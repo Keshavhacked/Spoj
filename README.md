@@ -9,10 +9,15 @@
 int main()
 {
     int num1 , num2 , sum = 0 , rev1 = 0 , rev2 = 0;
+    
     printf("Enter the first number:\n");
+    
     scanf("%d",&num1);
+    
     printf("Enter the second number:\n");
+    
     scanf("%d",&num2);
+    
     while(num1!=0)
     {
        rev1 = (num1%10)+(rev1*10);
@@ -27,7 +32,9 @@ int main()
     }
     printf("Reverse is : %d\n",rev2);
 
+    
     sum = rev1+rev2;
+    
     printf("Sum of Reversed numbers is : %d",sum);
 
     return 0;
